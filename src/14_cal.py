@@ -22,3 +22,21 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+
+yearInput = input("Enter the year: ", ).isnumeric()
+monthInput = input("Enter the month number: ", ).isnumeric()
+
+
+if not yearInput and monthInput:
+    time = datetime.today()
+    yearInput = time.year
+    monthInput = time.month
+
+if not yearInput:
+    time = datetime.today()
+    yearInput = time.year
+    monthInput = monthInput
+
+print(calendar.month(yearInput, monthInput))
+

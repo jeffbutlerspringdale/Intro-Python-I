@@ -28,9 +28,9 @@ print(x)
 
 # Print the length of list x
 # YOUR CODE HERE 
-print("length of x", len(x))
+print("length of x is", len(x))
 # Print all the values in x multiplied by 1000
 # YOUR CODE HERE
-import numpy
-xTo1000 = numpy.multiply(x, 1000)
+
+xTo1000 = [i * 1000 for i in x]
 print(xTo1000)

@@ -18,7 +18,7 @@ with open('foo.txt') as f:
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
-with open('bar.txt') as f:
+with open('bar.txt', 'w+') as f:
     f.write('testing write\n')
     f.write('testing write2\n')
     f.write('testing write3\n')
